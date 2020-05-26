@@ -22,6 +22,13 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
+
+  @media only screen and (max-width: 411px) {
+    padding: 1rem;
+    margin-bottom: 0rem;
+    height: 70%;
+    padding: 0 1rem;
+  }
 }
 
 .content {
@@ -55,6 +62,10 @@
   @media only screen and (max-width: 768px) {
     padding: 3rem;
   }
+
+  @media only screen and (max-width: 411px) {
+    flex-direction: column;
+  }
 }
 
 .description {
@@ -69,6 +80,11 @@
   @media only screen and (max-width: 768px) {
     padding: 2rem;
     margin-right: 3rem;
+  }
+
+   @media only screen and (max-width: 411px) {
+    margin-right: 0;
+    margin-bottom: 3rem;
   }
 }
 

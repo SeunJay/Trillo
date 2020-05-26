@@ -2,6 +2,11 @@
 .logo {
   height: 3.25rem;
   margin-left: 2rem;
+
+  @media only screen and (max-width: 411px) {
+    height: 2.5rem;
+    margin-left: 1rem;
+  }
 }
 
 //SEARCH
@@ -22,6 +27,11 @@
     width: 90%;
     transition: all 0.2s;
     margin-right: -3.25rem;
+
+    @media only screen and (max-width: 411px) {
+      width: 80%;
+      padding: 0.2rem 1rem;
+    }
 
     &:focus {
       outline: none;
@@ -122,6 +132,11 @@
   &__item {
     position: relative;
 
+    @media only screen and (max-width: 411px) {
+      display: flex;
+      flex-direction: column;
+    }
+
     &:not(:last-child) {
       margin-bottom: 0.5rem;
     }
@@ -166,6 +181,11 @@
       justify-content: center;
       padding: 2rem;
     }
+
+    @media only screen and (max-width: 411px) {
+      flex-direction: column;
+      padding: 1rem 1rem;
+    }
   }
 
   &__icon {
@@ -173,6 +193,12 @@
     height: 1.75rem;
     margin-right: 2rem;
     fill: currentColor;
+
+    @media only screen and (max-width: 411px) {
+      align-self: center;
+      margin-right: 0;
+      margin-bottom: 0.7rem;
+    }
   }
 }
 
@@ -212,6 +238,12 @@
     text-transform: uppercase;
     letter-spacing: 1px;
     padding: 1.5rem 3rem;
+
+    @media only screen and (max-width: 411px) {
+      padding: 0.9rem;
+      font-size: 1.5rem;
+      letter-spacing: 0.5px;
+    }
   }
 
   &__stars {
@@ -224,6 +256,11 @@
     width: 1.75rem;
     height: 1.75rem;
     fill: var(--color-primary);
+
+    @media only screen and (max-width: 411px) {
+      width: 1.05rem;
+      height: 1.05rem;
+    }
   }
 
   &__icon-location {
@@ -252,6 +289,10 @@
   &__rating-average {
     font-size: 2.25rem;
     font-weight: 300;
+
+    @media only screen and (max-width: 411px) {
+      font-size: 2rem;
+    }
   }
 
   &__rating-count {
@@ -383,7 +424,7 @@
   position: relative;
   overflow: hidden;
 
-   @media only screen and (max-width: 768px){
+  @media only screen and (max-width: 768px) {
     padding: 2rem;
     margin-bottom: 3rem;
   }
@@ -449,7 +490,7 @@
   padding: 3.5rem 0;
   text-align: center;
 
-   @media only screen and (max-width: 768px){
+  @media only screen and (max-width: 768px) {
     padding: 2.5rem 0;
   }
 
